@@ -1,7 +1,7 @@
 .scrolling-bg {
   overflow: hidden;
-  width: 101vw;
-  height: 101vh;
+  width: 100vw;
+  height: 100vh;
   background: url("images/bart.jpg") repeat 0 0;
   animation: slide 10s linear infinite;
 }
@@ -9,12 +9,51 @@
     from { background-position: 0 0; }
     to { background-position: -100vh -100vw; }
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  border-radius: 10px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #111;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
 .content {
     padding-top: 10px;
     border-radius: 20px;
-    min-width: 800px;
+    min-width: 500px;
     width: 60vw;
-    min-height: 800px;
+    height: 45vw;
     background: rgba(95, 95, 95, 0.9);
   position: absolute;
   overflow: auto;
