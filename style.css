@@ -12,9 +12,9 @@
 .content {
     padding-top: 10px;
     border-radius: 20px;
-    min-width: 500px;
-    width: 70vw;
-    height: 50vw;
+    min-width: 800px;
+    width: 60vw;
+    min-height: 800px;
     background: rgba(95, 95, 95, 0.9);
   position: absolute;
   overflow: auto;
