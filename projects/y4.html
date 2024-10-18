@@ -35,12 +35,36 @@
                   </div>
                 </li>
             </ul>
-            <p>Here you can find our full album in a long video, along with an exclusive song from our website. Please enjoy.</p>
-            <p style="font-size: 36px;">Y4 FULL ALBUM:</p>
-            <video src="../images/untitled.mp4" width="500px" controls></video>
-            <p style="font-size: 36px;">HOODRAT 3:</p>
-            <video src="../images/10121.mp4" width="500px"controls></video>
+            <div class="content" style="left: 20%;min-width: 250px; width:200px; height: 300px;text-align: center;overflow-y: visible; top:40%">
+              <p>Songs</p>
+              <ul>
+                <li><a href="#" onclick="changesong('../music/y4/supersponge.ogg')">SUPERSPONGE</a></li>
+                <li><a href="#" onclick="changesong('../music/y4/ohio_ohio_ohio.ogg')">OHIO OHIO OHIO</a></li>
+                <li><a href="#" onclick="changesong('../music/y4/newbomb2.ogg')">BOMB 2</a></li>
+                <li><a href="#" onclick="changesong('../music/y4/pray.ogg')">PRAY</a></li>
+                <li><a href="#" onclick="changesong('../music/y4/hot and drunk girls 2.ogg')">DRUNK & HOT GIRLS 2</a></li>
+                <li><a href="#" onclick="changesong('../music/y4/630.ogg')">630</a></li>
+                <li><a href="#" onclick="changesong('../music/y4/unlock.ogg')">UNLOCK</a></li>
+                <li><a href="#" onclick="changesong('../music/y4/jail 3.ogg')">JAIL 3</a></li>
+                <li><a href="#" onclick="changesong('../music/y4/crashouts and heartbreak.ogg')">CRASHOUTS & HEARTBREAK</a></li>
+                <li><a href="#" onclick="changesong('music/y4/preacher man.ogg')">PREACHER MAN</a></li>
+              </ul>
+              <p>Extras</p>
+              <ul>
+                <li><a href="#" onclick="changesong('../music/y4/BOMB 2 EXTENDED MIX.mp3')">BOMB 2 (EXTENDED VERSION)</a></li>
+                <li><a href="#" onclick="changesong('../music/y4/10121.mp4')">HOODRAT 3</a></li>
+              </ul>
+            </div>
+            <img src="../music/y4/cover.png" style="width: 300px;">
+            <br>
+            <audio class="player" controls src="../music/y4/supersponge.ogg" download></audio>
         </div>
     </div>
   </body>
+  <script>
+    function changesong(song){
+      var player = document.getElementsByClassName("player")
+      player[0].src = song
+    }
+  </script>
 </html>
