@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>YEEZY - CHOOSE YOUR BILLY</title>
+        <style>
+            body {
+                margin: 4px, 4px;
+                padding: 4px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                text-align: justify;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            li {
+                left: 50%;
+                float: left;
+                display: inline;
+            }
+
+            li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px;
+                text-decoration: none;
+            }
+            .box {
+                border: solid 2px white;
+                border-radius: 15px;
+                width: 150px;
+                height: auto;
+                background: rgba(95, 95, 95, 0.9);
+                backdrop-filter: blur(0.5);
+                margin: 10px;
+                float: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
+            .song {
+                width: 100px;
+                height: 100px;
+            }
+            .song-title {
+                margin-top: 10px;
+                text-align: center;
+                color: white;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>YEEZY</h1>
+        <ul class="navbar">
+            <li class="navelement"><a href="../index.html">HOME</a></li>
+            <li class="navelement"><a id="checkout">CHECKOUT</a></li>
+        </ul>
+        <div
+            class="box"
+            data-song="BILLY"
+            data-link="../music/billy/BILLY.flac"
+        >
+            <img
+                class="song"
+                src="https://cdn.discordapp.com/attachments/1338669229460820008/1344878318368981023/erw534ef.png?ex=67c5cec9&is=67c47d49&hm=d0954bd013107113067af9dad93b9cf133419815740eef318dcc21efa3e26d8a&"
+            />
+            <p class="song-title">BILLY</p>
+        </div>
+        <div class="box" data-song="PMO" data-link="../music/billy/PM0-1.flac">
+            <img
+                class="song"
+                src="https://cdn.discordapp.com/attachments/1338669229460820008/1344878318368981023/erw534ef.png?ex=67c5cec9&is=67c47d49&hm=d0954bd013107113067af9dad93b9cf133419815740eef318dcc21efa3e26d8a&"
+            />
+            <p class="song-title">PM0-1</p>
+        </div>
+        <div
+            class="box"
+            data-song="BOMB"
+            data-link="../music/billy/BOMB 4.flac"
+        >
+            <img
+                class="song"
+                src="https://cdn.discordapp.com/attachments/1338669229460820008/1344878318368981023/erw534ef.png?ex=67c5cec9&is=67c47d49&hm=d0954bd013107113067af9dad93b9cf133419815740eef318dcc21efa3e26d8a&"
+            />
+            <p class="song-title">BOMB 4</p>
+        </div>
+        <div
+            class="box"
+            data-song="PYE"
+            data-link="../music/billy/SYSTEM OVERDRIVE.flac"
+        >
+            <img
+                class="song"
+                src="https://cdn.discordapp.com/attachments/1338669229460820008/1344878318368981023/erw534ef.png?ex=67c5cec9&is=67c47d49&hm=d0954bd013107113067af9dad93b9cf133419815740eef318dcc21efa3e26d8a&"
+            />
+            <p class="song-title">SYSTEM OVERDRIVE</p>
+        </div>
+        <div
+            class="box"
+            data-song="NAHZARETH"
+            data-link="../music/billy/NAHZARETH.flac"
+        >
+            <img
+                class="song"
+                src="https://cdn.discordapp.com/attachments/1338669229460820008/1344878318368981023/erw534ef.png?ex=67c5cec9&is=67c47d49&hm=d0954bd013107113067af9dad93b9cf133419815740eef318dcc21efa3e26d8a&"
+            />
+            <p class="song-title">NAHZARETH</p>
+        </div>
+        <div
+            class="box"
+            data-song="BOUND"
+            data-link="../music/billy/CANT BEAR TIME.flac"
+        >
+            <img
+                class="song"
+                src="https://cdn.discordapp.com/attachments/1338669229460820008/1344878318368981023/erw534ef.png?ex=67c5cec9&is=67c47d49&hm=d0954bd013107113067af9dad93b9cf133419815740eef318dcc21efa3e26d8a&"
+            />
+            <p class="song-title">CAN'T BEAR TIME</p>
+        </div>
+        <div
+            class="box"
+            data-song="TAMALE"
+            data-link="../music/billy/HOLD MY TAMALE KIDS SEE DANGER.flac"
+        >
+            <img
+                class="song"
+                src="https://cdn.discordapp.com/attachments/1338669229460820008/1344878318368981023/erw534ef.png?ex=67c5cec9&is=67c47d49&hm=d0954bd013107113067af9dad93b9cf133419815740eef318dcc21efa3e26d8a&"
+            />
+            <p class="song-title">HOLD MY TAMALE / KIDS SEE DANGER</p>
+        </div>
+        <div
+            class="box"
+            data-song="800"
+            data-link="../music/billy/800 DEGREES.flac"
+        >
+            <img
+                class="song"
+                src="https://cdn.discordapp.com/attachments/1338669229460820008/1344878318368981023/erw534ef.png?ex=67c5cec9&is=67c47d49&hm=d0954bd013107113067af9dad93b9cf133419815740eef318dcc21efa3e26d8a&"
+            />
+            <p class="song-title">800 DEGREES</p>
+        </div>
+        <script>
+            // Initialize an empty cart array
+            let cart = [];
+
+            // Get all elements with the class "box"
+            const boxes = document.querySelectorAll(".box");
+
+            // Add a click event listener to each box
+            boxes.forEach((box) => {
+                box.addEventListener("click", () => {
+                    // Get the song title and link from the data attributes
+                    const songTitle = box.getAttribute("data-song");
+                    const songLink = box.getAttribute("data-link");
+
+                    // Add the song to the cart array as an object
+                    cart.push({ title: songTitle, link: songLink });
+
+                    // Log the cart to the console (for debugging)
+                    console.log("Cart:", cart);
+
+                    // Optional: Display a message to the user
+                    alert(`ADDED GYATT TO THE CART`);
+                });
+            });
+
+            // Add a click event listener to the CHECKOUT link
+            const checkoutLink = document.getElementById("checkout");
+            checkoutLink.addEventListener("click", async () => {
+                if (cart.length === 0) {
+                    alert("CART EMPTY.");
+                    return;
+                }
+
+                // Download each song in the cart
+                for (const song of cart) {
+                    try {
+                        // Fetch the song file
+                        const response = await fetch(song.link);
+                        if (!response.ok)
+                            throw new Error("Failed to fetch song");
+
+                        // Convert the response to a blob
+                        const blob = await response.blob();
+
+                        // Create a download link
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement("a");
+                        a.href = url;
+                        document.body.appendChild(a);
+                        a.click(); // Trigger the download
+                        document.body.removeChild(a); // Clean up
+
+                        // Revoke the object URL to free up memory
+                        URL.revokeObjectURL(url);
+                    } catch (error) {
+                        console.error(
+                            `Failed to download "${song.title}":`,
+                            error,
+                        );
+                        alert(
+                            `Failed to download "${song.title}". Please try again later.`,
+                        );
+                    }
+                }
+
+                // Clear the cart after download
+                cart = [];
+                console.log("Cart cleared:", cart);
+                alert("ALL SONGS DOWNLOADED.");
+            });
+        </script>
+    </body>
+</html>
