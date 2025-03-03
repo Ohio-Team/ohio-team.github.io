@@ -74,7 +74,11 @@
             />
             <p class="song-title">BILLY</p>
         </div>
-        <div class="box" data-song="PMO" data-link="../music/billy/PM0-1.flac">
+        <div
+            class="box"
+            data-song="PM0-1"
+            data-link="../music/billy/PM0-1.flac"
+        >
             <img
                 class="song"
                 src="https://cdn.discordapp.com/attachments/1338669229460820008/1344878318368981023/erw534ef.png?ex=67c5cec9&is=67c47d49&hm=d0954bd013107113067af9dad93b9cf133419815740eef318dcc21efa3e26d8a&"
@@ -83,7 +87,7 @@
         </div>
         <div
             class="box"
-            data-song="BOMB"
+            data-song="BOMB 4"
             data-link="../music/billy/BOMB 4.flac"
         >
             <img
@@ -94,7 +98,7 @@
         </div>
         <div
             class="box"
-            data-song="PYE"
+            data-song="SYSTEM OVERDRIVE"
             data-link="../music/billy/SYSTEM OVERDRIVE.flac"
         >
             <img
@@ -116,7 +120,7 @@
         </div>
         <div
             class="box"
-            data-song="BOUND"
+            data-song="CAN'T BEAR TIME"
             data-link="../music/billy/CANT BEAR TIME.flac"
         >
             <img
@@ -127,7 +131,7 @@
         </div>
         <div
             class="box"
-            data-song="TAMALE"
+            data-song="HOLD MY TAMALE / KIDS SEE DANGER"
             data-link="../music/billy/HOLD MY TAMALE KIDS SEE DANGER.flac"
         >
             <img
@@ -138,7 +142,7 @@
         </div>
         <div
             class="box"
-            data-song="800"
+            data-song="800 DEGREES"
             data-link="../music/billy/800 DEGREES.flac"
         >
             <img
@@ -195,6 +199,7 @@
                         const url = URL.createObjectURL(blob);
                         const a = document.createElement("a");
                         a.href = url;
+                        a.download = `${song.title}.flac`;
                         document.body.appendChild(a);
                         a.click(); // Trigger the download
                         document.body.removeChild(a); // Clean up
